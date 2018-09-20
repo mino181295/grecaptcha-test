@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Titolo</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta site-key="SITE_KEY">
+</head>
+
+<body class="text-center">
+
+    <div class="cover-container d-flex justify-content-center h-100 p-3 mx-auto flex-column">
+        <main role="main" class="inner cover">
+            <h1>Google reCaptcha</h1>
+            <div id="idone_grecaptcha"></div>
+            <div id="idtwo_grecaptcha"></div>
+            <div id="idthree_grecaptcha"></div>
+            <button class="btn btn-secondary" onclick="grecaptchaTokens()">Get recaptcha response</button>
+        </main>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</html>
